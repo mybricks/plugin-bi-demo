@@ -5,7 +5,7 @@ import { plus, remove, edit } from '../../../icon';
 import data from '../../../constant';
 import { Item } from '../../../interface';
 
-function Dimension ({ value: id, onChange }: any) {
+export default function Dimension ({ value: id, onChange }: any) {
   const [dimensions, set] = useState<Item[]>(data[id].dimension);
   const [visible, setVisible] = useState(false);
   const [form] = Form.useForm();
@@ -79,5 +79,3 @@ function Dimension ({ value: id, onChange }: any) {
     </div>
   );
 }
-
-export default memo(Dimension)

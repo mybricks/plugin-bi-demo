@@ -14,7 +14,7 @@ const axisList: Item[] = [
   { label: 'z轴', value: 'zAxis' },
 ];
 
-function Axis({ data, onChange, isDragging }: any) {
+export default function Axis({ data, onChange, isDragging }: any) {
   const onDrop = useCallback((ev: React.DragEvent, axis: string) => {
     ev.preventDefault();
     const dimension = ev.dataTransfer.getData('dimension');
@@ -56,5 +56,3 @@ function Axis({ data, onChange, isDragging }: any) {
     </div>
   );
 }
-
-export default memo(Axis)
