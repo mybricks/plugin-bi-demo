@@ -1,0 +1,39 @@
+@import '../../../theme.less';
+
+.dimension {
+  padding: 10px;
+
+  .header {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      
+      svg {
+        margin-left: 4px;
+        cursor: pointer;
+        &:hover {
+          color: @color-primary;
+        }
+      }
+    }
+  }
+  .item {
+    display: flex;
+    
+    justify-content: space-between;
+    span {
+      cursor: pointer;
+      margin-left: 6px;
+      &:hover {
+        color: @color-primary;
+      }
+    }
+    padding: 4px;
+    &:hover {
+      background-color: #e3eafc;
+    }
+  }
+}

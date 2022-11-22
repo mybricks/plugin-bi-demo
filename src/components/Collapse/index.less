@@ -1,0 +1,28 @@
+@import '../../theme.less';
+
+.collapse {
+  position: relative;
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  .header {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      max-width: 10px;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      margin-right: 6px;
+      transform: rotate(90deg);
+    }
+    .fold {
+      transform: rotate(0);
+    }
+  }
+}
